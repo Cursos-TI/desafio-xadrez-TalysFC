@@ -5,6 +5,7 @@ int main() {
 
 
     int torre, bispo = 0, rainha = 0; //variaveis com nomes das peças (novato)
+    int cavalo, movimentocavalo = 0; //variaveis (aventureiro)
     
 
     printf("Movimento da Torre: \n"); //movimentação da torre usando for (novato)
@@ -27,5 +28,15 @@ int main() {
     } while(rainha < 8);
 
     
+    printf("\nMovimento do Cavalo: \n"); //movimentação do cavalo usando loops aninhados (aventureiro)
+    for(cavalo = 0; cavalo < 1; cavalo++){
+        while(movimentocavalo < 2){
+            printf("Baixo. \n");
+            movimentocavalo++;
+        }
+        printf("Esquerda. \n");
+    }
+
+
     return 0;
 }
